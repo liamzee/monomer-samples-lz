@@ -90,9 +90,7 @@ main = startApp EmptyModel eventHandler uiBuilder []
 eventHandler :: AppEventHandler Model Events
 eventHandler _ _ _ _ = []
 
--- | The UI builder function. As above, the NullModel is added to aid in type inference,
--- and the function is partial (will crash if given a generic model value). It also does
--- nothing.
+-- | The UI builder function that does nothing. As before, we wildcard all arguments.
 -- 
 -- As for the AppUIBuilder type, it is a type synonym for UIBuilder, which is a type
 -- synonym itself for
