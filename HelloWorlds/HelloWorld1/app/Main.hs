@@ -54,7 +54,7 @@ data Model = EmptyModel deriving Eq
 
 data Events
 
-{-# Nothing really unusual going on here, it's the same as before.
+{- Nothing really unusual going on here, it's the same as before.
 
 We use a Void type, one that has no values, to satisfy the type
 requirement of events.
