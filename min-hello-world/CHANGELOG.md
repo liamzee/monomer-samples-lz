@@ -1,4 +1,4 @@
-# Revision history for minimal-application
+# Revision history for min-hello-world
 
 ## 0.1.0.0 -- YYYY-mm-dd
 
