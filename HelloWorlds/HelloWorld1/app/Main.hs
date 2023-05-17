@@ -19,10 +19,12 @@ eventHandler _ _ _ _ = []
 uiBuilder :: AppUIBuilder Model Events
 uiBuilder _ _ =
     image_
+
         "https://upload.wikimedia.org/\
         \wikipedia/commons/thumb/2/28/\
         \HelloWorld.svg/512px-HelloWorld\
         \.svg.png?20100207111424"
+
         [fitFill]
 
 
@@ -88,12 +90,11 @@ The event handler is unchanged from the minimum idiomatic example.
 uiBuilder :: AppUIBuilder Model Events
 uiBuilder _ _ =
     image_
+
         "https://upload.wikimedia.org/\   -- Note here that we are using a '\' character
         \wikipedia/commons/thumb/2/28/\   -- to split the string literal, then start the
         \HelloWorld.svg/512px-HelloWorld\ -- text again with the same escape character.
-        \.svg.png?20100207111424"         -- If we need to show an escape character,
-                                          -- we'll have to start the line first with \, then
-                                          -- append the escape character.
+        \.svg.png?20100207111424"         
 
         [fitFill]  -- And here we use fitFill to tell monomer that the image
                    -- should be stretched to fit the widget. Otherwise, it'd be aligned
