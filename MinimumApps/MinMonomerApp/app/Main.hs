@@ -3,10 +3,7 @@
 A version without comments:
 
 
-
 {-# LANGUAGE OverloadedStrings #-}
-
-module Main where
 
 import Monomer
 
@@ -38,15 +35,11 @@ The minimal application that gets startApp to run a monomer application. Or, in 
 this application does nothing, but it shows the minimal configuration to open a monomer window.
 
 The data NullModel and data Events types can have no entries (i.e, drop the NulLEvent and NullModel),
-but it breaks type inference, and in this sample, we want a version without idiomatic type signatures.
+but it breaks type inference, and in this sample, we want a version without type signatures used in idiomatic Haskell.
 
 -}
 
--- Start of module.
-
-module Main where
-
-import Monomer -- The import line, which gives you everything in the monomer package.
+import Monomer -- The import line, which imports everything exposed in the monomer package.
 
 {-
 
