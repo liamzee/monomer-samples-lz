@@ -2,20 +2,5 @@
 Annotated monomer samples to help with deciphering the library.
 
 Current samples:
-\
-\
 
-MinimumApps: Start here to see how to get monomer to open up a window.
-\
-
-MinMonomerApp: Annotated minimal monomer application without type signatures. If it compiles, it \ works, no?
-
-MinIdiomaticApp:
-    The above application with type signatures and some explanations of the \
-  underlying functions.
-
-\
-\
-
-HelloWorlds: Fuller introductory samples. More problematic is the need to include assets with your \
-monomer program, and you'll see some approaches to such here.
+min-hello-world: very simple hello world program that uses the unit type to avoid custom-defining event and model types, as well as using a Wikipedia image to avoid having to configure and load a font asset. Without type signatures, to be friendly to Haskell newbies as possible.
